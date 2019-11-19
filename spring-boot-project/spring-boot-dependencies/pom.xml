@@ -121,7 +121,7 @@
 		<jest.version>6.3.1</jest.version>
 		<jetty.version>9.4.15.v20190215</jetty.version>
 		<jetty-jsp.version>2.2.0.v201112011158</jetty-jsp.version>
-		<jetty-el.version>8.5.35.1</jetty-el.version>
+		<jetty-el.version>9.0.19</jetty-el.version>
 		<jetty-reactive-httpclient.version>1.0.3</jetty-reactive-httpclient.version>
 		<jmustache.version>1.14</jmustache.version>
 		<jna.version>4.5.2</jna.version>
