@@ -160,7 +160,7 @@
 		<okhttp3.version>3.14.1</okhttp3.version>
 		<pooled-jms.version>1.0.4</pooled-jms.version>
 		<postgresql.version>42.2.5</postgresql.version>
-		<prometheus-pushgateway.version>0.6.0</prometheus-pushgateway.version>
+		<prometheus-pushgateway.version>0.8.1</prometheus-pushgateway.version>
 		<quartz.version>2.3.1</quartz.version>
 		<querydsl.version>4.2.1</querydsl.version>
 		<rabbit-amqp-client.version>5.7.0</rabbit-amqp-client.version>
