@@ -194,7 +194,7 @@
 		<spring-retry.version>1.2.4.RELEASE</spring-retry.version>
 		<spring-security.version>5.2.0.M2</spring-security.version>
 		<spring-session-bom.version>Corn-M1</spring-session-bom.version>
-		<spring-ws.version>3.0.7.RELEASE</spring-ws.version>
+		<spring-ws.version>3.0.10.RELEASE</spring-ws.version>
 		<sqlite-jdbc.version>3.27.2</sqlite-jdbc.version>
 		<statsd-client.version>3.1.0</statsd-client.version>
 		<sun-mail.version>${jakarta-mail.version}</sun-mail.version>
