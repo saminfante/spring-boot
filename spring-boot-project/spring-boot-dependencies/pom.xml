@@ -184,7 +184,7 @@
 		<spring-batch.version>4.2.0.M1</spring-batch.version>
 		<spring-cloud-connectors.version>2.0.5.RELEASE</spring-cloud-connectors.version>
 		<spring-data-releasetrain.version>Moore-M3</spring-data-releasetrain.version>
-		<spring-framework.version>${spring.version}</spring-framework.version>
+		<spring-framework.version>5.3.2-SNAPSHOT</spring-framework.version>
 		<spring-hateoas.version>1.0.0.M1</spring-hateoas.version>
 		<spring-integration.version>5.2.0.M1</spring-integration.version>
 		<spring-kafka.version>2.3.0.M1</spring-kafka.version>
