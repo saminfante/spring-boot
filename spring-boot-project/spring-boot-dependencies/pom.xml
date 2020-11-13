@@ -81,7 +81,7 @@
 		<influxdb-java.version>2.15</influxdb-java.version>
 		<jackson.version>2.9.8</jackson.version>
 		<jakarta-activation.version>1.2.1</jakarta-activation.version>
-		<jakarta-annotation.version>1.3.4</jakarta-annotation.version>
+		<jakarta-annotation.version>2.0.0</jakarta-annotation.version>
 		<jakarta-jms.version>2.0.2</jakarta-jms.version>
 		<jakarta-json.version>1.1.5</jakarta-json.version>
 		<jakarta-json-bind.version>1.0.1</jakarta-json-bind.version>
