@@ -63,7 +63,7 @@
 			<dependency>
 				<groupId>io.mockk</groupId>
 				<artifactId>mockk</artifactId>
-				<version>1.9.1</version>
+				<version>1.10.3-jdk8</version>
 			</dependency>
 			<dependency>
 				<groupId>org.sonatype.plexus</groupId>
