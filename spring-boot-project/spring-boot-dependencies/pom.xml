@@ -73,9 +73,9 @@
 		<hibernate-validator.version>6.0.16.Final</hibernate-validator.version>
 		<hikaricp.version>3.3.1</hikaricp.version>
 		<hsqldb.version>2.4.1</hsqldb.version>
-		<htmlunit.version>2.34.1</htmlunit.version>
+		<htmlunit.version>2.45.0</htmlunit.version>
 		<httpasyncclient.version>4.1.4</httpasyncclient.version>
-		<httpclient.version>4.5.8</httpclient.version>
+		<httpclient.version>4.5.13</httpclient.version>
 		<httpcore.version>4.4.11</httpcore.version>
 		<infinispan.version>9.4.12.Final</infinispan.version>
 		<influxdb-java.version>2.15</influxdb-java.version>
@@ -172,7 +172,7 @@
 		<rxjava-adapter.version>1.2.1</rxjava-adapter.version>
 		<rxjava2.version>2.2.8</rxjava2.version>
 		<selenium.version>3.141.59</selenium.version>
-		<selenium-htmlunit.version>2.34.0</selenium-htmlunit.version>
+		<selenium-htmlunit.version>2.45.0</selenium-htmlunit.version>
 		<sendgrid.version>4.3.0</sendgrid.version>
 		<servlet-api.version>4.0.1</servlet-api.version>
 		<slf4j.version>1.7.26</slf4j.version>
