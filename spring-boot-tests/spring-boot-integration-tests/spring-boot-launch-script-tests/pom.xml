@@ -32,7 +32,7 @@
 		<dependency>
 			<groupId>com.github.docker-java</groupId>
 			<artifactId>docker-java</artifactId>
-			<version>3.0.14</version>
+			<version>3.2.6</version>
 			<scope>test</scope>
 			<exclusions>
 				<exclusion>
