@@ -37,7 +37,7 @@
 		<activemq.version>5.15.9</activemq.version>
 		<antlr2.version>2.7.7</antlr2.version>
 		<appengine-sdk.version>1.9.73</appengine-sdk.version>
-		<artemis.version>2.7.0</artemis.version>
+		<artemis.version>2.10.1</artemis.version>
 		<aspectj.version>1.9.3</aspectj.version>
 		<assertj.version>3.12.2</assertj.version>
 		<atomikos.version>4.0.6</atomikos.version>
@@ -140,7 +140,7 @@
 		<kafka.version>2.2.0</kafka.version>
 		<kotlin.version>1.3.30</kotlin.version>
 		<lettuce.version>5.1.6.RELEASE</lettuce.version>
-		<liquibase.version>3.6.3</liquibase.version>
+		<liquibase.version>3.8.1</liquibase.version>
 		<log4j2.version>2.11.2</log4j2.version>
 		<logback.version>1.2.3</logback.version>
 		<lombok.version>1.18.6</lombok.version>
