@@ -1,0 +1,537 @@
+version: 2
+registries:
+  git-github-com:
+    type: git
+    url: https://github.com
+    username: saminfante
+    password: "${{secrets.GIT_GITHUB_COM_PASSWORD}}"
+
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:49"
+    timezone: US/Central
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: org.liquibase:liquibase-core
+    versions:
+    - 4.3.1
+    - 4.3.2
+    - 4.3.3
+  - dependency-name: org.flywaydb:flyway-maven-plugin
+    versions:
+    - 7.5.1
+    - 7.5.2
+    - 7.5.3
+    - 7.5.4
+    - 7.6.0
+    - 7.7.0
+    - 7.7.1
+    - 7.7.2
+    - 7.7.3
+  - dependency-name: org.flywaydb:flyway-core
+    versions:
+    - 7.5.1
+    - 7.5.2
+    - 7.5.3
+    - 7.5.4
+    - 7.6.0
+    - 7.7.0
+    - 7.7.1
+    - 7.7.2
+    - 7.7.3
+  - dependency-name: io.dropwizard.metrics:metrics-servlets
+    versions:
+    - 4.1.17
+    - 4.1.19
+  - dependency-name: io.dropwizard.metrics:metrics-servlet
+    versions:
+    - 4.1.17
+    - 4.1.19
+  - dependency-name: io.dropwizard.metrics:metrics-logback
+    versions:
+    - 4.1.17
+    - 4.1.19
+  - dependency-name: io.dropwizard.metrics:metrics-log4j2
+    versions:
+    - 4.1.17
+    - 4.1.19
+  - dependency-name: io.dropwizard.metrics:metrics-jvm
+    versions:
+    - 4.1.17
+    - 4.1.19
+  - dependency-name: io.dropwizard.metrics:metrics-json
+    versions:
+    - 4.1.17
+    - 4.1.19
+  - dependency-name: io.dropwizard.metrics:metrics-jmx
+    versions:
+    - 4.1.17
+    - 4.1.19
+  - dependency-name: io.dropwizard.metrics:metrics-jetty9
+    versions:
+    - 4.1.17
+    - 4.1.19
+  - dependency-name: io.dropwizard.metrics:metrics-jersey2
+    versions:
+    - 4.1.17
+    - 4.1.19
+  - dependency-name: io.dropwizard.metrics:metrics-jdbi
+    versions:
+    - 4.1.17
+    - 4.1.19
+  - dependency-name: io.dropwizard.metrics:metrics-httpasyncclient
+    versions:
+    - 4.1.17
+    - 4.1.19
+  - dependency-name: io.dropwizard.metrics:metrics-healthchecks
+    versions:
+    - 4.1.17
+    - 4.1.19
+  - dependency-name: io.dropwizard.metrics:metrics-graphite
+    versions:
+    - 4.1.17
+    - 4.1.19
+  - dependency-name: io.dropwizard.metrics:metrics-ehcache
+    versions:
+    - 4.1.17
+    - 4.1.19
+  - dependency-name: io.dropwizard.metrics:metrics-core
+    versions:
+    - 4.1.17
+    - 4.1.19
+  - dependency-name: io.dropwizard.metrics:metrics-annotation
+    versions:
+    - 4.1.17
+    - 4.1.19
+  - dependency-name: io.lettuce:lettuce-core
+    versions:
+    - 6.0.3.RELEASE
+    - 6.1.0.RELEASE
+  - dependency-name: com.googlecode.maven-download-plugin:download-maven-plugin
+    versions:
+    - 1.6.2
+  - dependency-name: io.undertow:undertow-websockets-jsr
+    versions:
+    - 2.2.4.Final
+    - 2.2.5.Final
+    - 2.2.6.Final
+  - dependency-name: io.undertow:undertow-servlet
+    versions:
+    - 2.2.4.Final
+    - 2.2.5.Final
+    - 2.2.6.Final
+  - dependency-name: io.undertow:undertow-core
+    versions:
+    - 2.2.4.Final
+    - 2.2.5.Final
+    - 2.2.6.Final
+  - dependency-name: org.seleniumhq.selenium:htmlunit-driver
+    versions:
+    - 2.46.0
+    - 2.48.0
+  - dependency-name: com.fasterxml.jackson:jackson-bom
+    versions:
+    - 2.12.2
+  - dependency-name: org.jetbrains.kotlin:kotlin-gradle-plugin
+    versions:
+    - 1.4.21-2
+    - 1.4.30
+    - 1.4.31
+    - 1.4.32
+  - dependency-name: org.jetbrains.kotlin:kotlin-maven-plugin
+    versions:
+    - 1.4.21-2
+    - 1.4.30
+    - 1.4.31
+    - 1.4.32
+  - dependency-name: org.jetbrains.kotlin:kotlin-bom
+    versions:
+    - 1.4.21-2
+    - 1.4.30
+    - 1.4.31
+    - 1.4.32
+  - dependency-name: org.elasticsearch.client:elasticsearch-rest-high-level-client
+    versions:
+    - 7.10.2
+    - 7.11.0
+    - 7.11.1
+    - 7.11.2
+    - 7.12.0
+  - dependency-name: org.elasticsearch.client:elasticsearch-rest-client
+    versions:
+    - 7.10.2
+    - 7.11.0
+    - 7.11.1
+    - 7.11.2
+    - 7.12.0
+  - dependency-name: org.elasticsearch.plugin:transport-netty4-client
+    versions:
+    - 7.10.2
+    - 7.11.0
+    - 7.11.1
+    - 7.11.2
+    - 7.12.0
+  - dependency-name: org.elasticsearch.distribution.integ-test-zip:elasticsearch
+    versions:
+    - 7.10.2
+    - 7.11.0
+    - 7.11.1
+    - 7.11.2
+    - 7.12.0
+  - dependency-name: org.elasticsearch.client:transport
+    versions:
+    - 7.10.2
+    - 7.11.0
+    - 7.11.1
+    - 7.11.2
+    - 7.12.0
+  - dependency-name: org.elasticsearch:elasticsearch
+    versions:
+    - 7.10.2
+    - 7.11.0
+    - 7.11.1
+    - 7.11.2
+    - 7.12.0
+  - dependency-name: io.projectreactor:reactor-bom
+    versions:
+    - Dysprosium-SR16
+    - Dysprosium-SR17
+    - Dysprosium-SR18
+  - dependency-name: org.springframework:spring-core
+    versions:
+    - 5.3.4-SNAPSHOT
+    - 5.3.5-SNAPSHOT
+    - 5.3.6-SNAPSHOT
+  - dependency-name: org.springframework:spring-framework-bom
+    versions:
+    - 5.3.4-SNAPSHOT
+    - 5.3.5-SNAPSHOT
+    - 5.3.6-SNAPSHOT
+  - dependency-name: redis.clients:jedis
+    versions:
+    - 3.5.2
+  - dependency-name: io.micrometer:micrometer-test
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-wavefront
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-statsd
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-stackdriver
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-signalfx
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-prometheus
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-new-relic
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-kairos
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-jmx
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-influx
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-humio
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-graphite
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-ganglia
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-elastic
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-dynatrace
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-datadog
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-cloudwatch
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-azure-monitor
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-atlas
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-registry-appoptics
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-jersey2
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: io.micrometer:micrometer-core
+    versions:
+    - 1.6.3
+    - 1.6.4
+    - 1.6.5
+  - dependency-name: com.google.appengine:appengine-api-1.0-sdk
+    versions:
+    - 1.9.86
+    - 1.9.87
+  - dependency-name: io.netty:netty-bom
+    versions:
+    - 4.1.58.Final
+    - 4.1.59.Final
+    - 4.1.60.Final
+  - dependency-name: org.apache.tomcat.embed:tomcat-embed-websocket
+    versions:
+    - 10.0.2
+    - 10.0.4
+  - dependency-name: org.apache.tomcat.embed:tomcat-embed-jasper
+    versions:
+    - 10.0.2
+    - 10.0.4
+  - dependency-name: org.apache.tomcat.embed:tomcat-embed-el
+    versions:
+    - 10.0.2
+    - 10.0.4
+  - dependency-name: org.apache.tomcat.embed:tomcat-embed-core
+    versions:
+    - 10.0.2
+    - 10.0.4
+  - dependency-name: org.apache.tomcat:tomcat-jsp-api
+    versions:
+    - 10.0.2
+    - 10.0.4
+  - dependency-name: org.apache.tomcat:tomcat-jdbc
+    versions:
+    - 10.0.2
+    - 10.0.4
+  - dependency-name: org.apache.tomcat:tomcat-annotations-api
+    versions:
+    - 10.0.2
+    - 10.0.4
+  - dependency-name: com.couchbase.client:java-client
+    versions:
+    - 3.1.1
+    - 3.1.3
+  - dependency-name: org.postgresql:postgresql
+    versions:
+    - 42.2.19
+  - dependency-name: org.neo4j:neo4j-ogm-http-driver
+    versions:
+    - 3.2.21
+  - dependency-name: org.neo4j:neo4j-ogm-embedded-native-types
+    versions:
+    - 3.2.21
+  - dependency-name: org.neo4j:neo4j-ogm-embedded-driver
+    versions:
+    - 3.2.21
+  - dependency-name: org.neo4j:neo4j-ogm-core
+    versions:
+    - 3.2.21
+  - dependency-name: org.neo4j:neo4j-ogm-bolt-native-types
+    versions:
+    - 3.2.21
+  - dependency-name: org.neo4j:neo4j-ogm-bolt-driver
+    versions:
+    - 3.2.21
+  - dependency-name: org.neo4j:neo4j-ogm-api
+    versions:
+    - 3.2.21
+  - dependency-name: com.microsoft.sqlserver:mssql-jdbc
+    versions:
+    - 9.2.0.jre15
+    - 9.2.1.jre15
+  - dependency-name: org.eclipse.jetty:jetty-reactive-httpclient
+    versions:
+    - 3.0.1
+  - dependency-name: net.bytebuddy:byte-buddy-agent
+    versions:
+    - 1.10.19
+    - 1.10.20
+    - 1.10.21
+  - dependency-name: net.bytebuddy:byte-buddy
+    versions:
+    - 1.10.19
+    - 1.10.20
+    - 1.10.21
+  - dependency-name: org.mongodb:mongodb-driver-reactivestreams
+    versions:
+    - 4.2.1
+  - dependency-name: com.github.ben-manes.caffeine:simulator
+    versions:
+    - 2.9.0
+    - 3.0.0
+  - dependency-name: com.github.ben-manes.caffeine:jcache
+    versions:
+    - 2.9.0
+    - 3.0.0
+  - dependency-name: com.github.ben-manes.caffeine:guava
+    versions:
+    - 2.9.0
+    - 3.0.0
+  - dependency-name: com.github.ben-manes.caffeine:caffeine
+    versions:
+    - 2.9.0
+    - 3.0.0
+  - dependency-name: org.ehcache:ehcache-transactions
+    versions:
+    - 3.9.1
+  - dependency-name: org.ehcache:ehcache-clustered
+    versions:
+    - 3.9.1
+  - dependency-name: org.ehcache:ehcache
+    versions:
+    - 3.9.1
+  - dependency-name: com.zaxxer:HikariCP
+    versions:
+    - 4.0.1
+    - 4.0.2
+  - dependency-name: io.mockk:mockk
+    versions:
+    - 1.10.5
+    - 1.10.6
+  - dependency-name: org.springframework.amqp:spring-rabbit-test
+    versions:
+    - 2.3.5-SNAPSHOT
+    - 2.3.6-SNAPSHOT
+  - dependency-name: org.springframework.amqp:spring-rabbit-junit
+    versions:
+    - 2.3.5-SNAPSHOT
+    - 2.3.6-SNAPSHOT
+  - dependency-name: org.springframework.amqp:spring-rabbit
+    versions:
+    - 2.3.5-SNAPSHOT
+    - 2.3.6-SNAPSHOT
+  - dependency-name: org.springframework.amqp:spring-amqp
+    versions:
+    - 2.3.5-SNAPSHOT
+    - 2.3.6-SNAPSHOT
+  - dependency-name: org.hibernate:hibernate-vibur
+    versions:
+    - 5.4.27.Final
+  - dependency-name: org.hibernate:hibernate-testing
+    versions:
+    - 5.4.27.Final
+  - dependency-name: org.hibernate:hibernate-spatial
+    versions:
+    - 5.4.27.Final
+  - dependency-name: org.hibernate:hibernate-proxool
+    versions:
+    - 5.4.27.Final
+  - dependency-name: org.hibernate:hibernate-jpamodelgen
+    versions:
+    - 5.4.27.Final
+  - dependency-name: org.hibernate:hibernate-jcache
+    versions:
+    - 5.4.27.Final
+  - dependency-name: org.hibernate:hibernate-java8
+    versions:
+    - 5.4.27.Final
+  - dependency-name: org.hibernate:hibernate-hikaricp
+    versions:
+    - 5.4.27.Final
+  - dependency-name: org.hibernate:hibernate-envers
+    versions:
+    - 5.4.27.Final
+  - dependency-name: org.hibernate:hibernate-entitymanager
+    versions:
+    - 5.4.27.Final
+  - dependency-name: org.hibernate:hibernate-ehcache
+    versions:
+    - 5.4.27.Final
+  - dependency-name: org.hibernate:hibernate-core
+    versions:
+    - 5.4.27.Final
+  - dependency-name: org.hibernate:hibernate-c3p0
+    versions:
+    - 5.4.27.Final
+  - dependency-name: org.jooq:jooq-codegen-maven
+    versions:
+    - 3.14.6
+    - 3.14.7
+  - dependency-name: org.jooq:jooq-codegen
+    versions:
+    - 3.14.6
+    - 3.14.7
+  - dependency-name: org.jooq:jooq-meta
+    versions:
+    - 3.14.6
+    - 3.14.7
+  - dependency-name: org.jooq:jooq
+    versions:
+    - 3.14.6
+    - 3.14.7
+  - dependency-name: org.mockito:mockito-junit-jupiter
+    versions:
+    - 3.7.7
+  - dependency-name: org.mockito:mockito-inline
+    versions:
+    - 3.7.7
+  - dependency-name: org.mockito:mockito-core
+    versions:
+    - 3.7.7
+  - dependency-name: org.codehaus.cargo:cargo-maven2-plugin
+    versions:
+    - 1.8.4
+  - dependency-name: joda-time:joda-time
+    versions:
+    - 2.10.9
+  - dependency-name: org.hibernate.validator:hibernate-validator-annotation-processor
+    versions:
+    - 7.0.0.Final
+  - dependency-name: org.hibernate.validator:hibernate-validator
+    versions:
+    - 7.0.0.Final
+  registries:
+  - git-github-com
