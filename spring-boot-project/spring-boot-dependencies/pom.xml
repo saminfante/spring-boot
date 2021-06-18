@@ -34,10 +34,10 @@
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
 		<!-- Dependency versions -->
-		<activemq.version>5.15.9</activemq.version>
+		<activemq.version>5.16.0</activemq.version>
 		<antlr2.version>2.7.7</antlr2.version>
 		<appengine-sdk.version>1.9.73</appengine-sdk.version>
-		<artemis.version>2.7.0</artemis.version>
+		<artemis.version>2.16.0</artemis.version>
 		<aspectj.version>1.9.3</aspectj.version>
 		<assertj.version>3.12.2</assertj.version>
 		<atomikos.version>4.0.6</atomikos.version>
@@ -60,7 +60,7 @@
 		<embedded-mongo.version>2.2.0</embedded-mongo.version>
 		<flyway.version>5.2.4</flyway.version>
 		<freemarker.version>2.3.28</freemarker.version>
-		<elasticsearch.version>6.7.1</elasticsearch.version>
+		<elasticsearch.version>7.7.0</elasticsearch.version>
 		<glassfish-el.version>3.0.2</glassfish-el.version>
 		<glassfish-jaxb.version>2.3.2</glassfish-jaxb.version>
 		<groovy.version>2.5.6</groovy.version>
@@ -77,7 +77,7 @@
 		<httpasyncclient.version>4.1.4</httpasyncclient.version>
 		<httpclient.version>4.5.8</httpclient.version>
 		<httpcore.version>4.4.11</httpcore.version>
-		<infinispan.version>9.4.12.Final</infinispan.version>
+		<infinispan.version>9.4.17.Final</infinispan.version>
 		<influxdb-java.version>2.15</influxdb-java.version>
 		<jackson.version>2.9.8</jackson.version>
 		<jakarta-activation.version>1.2.1</jakarta-activation.version>
@@ -201,12 +201,12 @@
 		<saaj-impl.version>1.5.1</saaj-impl.version>
 		<thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
 		<thymeleaf-extras-springsecurity.version>3.0.4.RELEASE</thymeleaf-extras-springsecurity.version>
-		<thymeleaf-layout-dialect.version>2.4.1</thymeleaf-layout-dialect.version>
+		<thymeleaf-layout-dialect.version>2.5.3</thymeleaf-layout-dialect.version>
 		<thymeleaf-extras-data-attribute.version>2.0.1</thymeleaf-extras-data-attribute.version>
 		<thymeleaf-extras-java8time.version>3.0.4.RELEASE</thymeleaf-extras-java8time.version>
 		<tomcat.version>9.0.19</tomcat.version>
 		<unboundid-ldapsdk.version>4.0.10</unboundid-ldapsdk.version>
-		<undertow.version>2.0.20.Final</undertow.version>
+		<undertow.version>2.2.0.Final</undertow.version>
 		<webjars-hal-browser.version>3325375</webjars-hal-browser.version>
 		<webjars-locator-core.version>0.37</webjars-locator-core.version>
 		<wsdl4j.version>1.6.3</wsdl4j.version>
